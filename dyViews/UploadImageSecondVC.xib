@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UploadImageSecondVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" restorationIdentifier="AccountProgressView" translatesAutoresizingMaskIntoConstraints="NO" id="ybP-pM-Ack">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="进度条细s1.png" translatesAutoresizingMaskIntoConstraints="NO" id="GuT-Ca-K8b" userLabel="Image View1">
+                            <rect key="frame" x="38" y="40" width="100" height="9"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="3Wz-jn-jq8"/>
+                                <constraint firstAttribute="height" constant="9" id="XlG-H1-IJN"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="9" id="ai9-sZ-kQu"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="pLG-yo-Lfx"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="ai9-sZ-kQu"/>
+                                    <exclude reference="pLG-yo-Lfx"/>
+                                </mask>
+                            </variation>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="进度条细s2.png" translatesAutoresizingMaskIntoConstraints="NO" id="LLT-Kn-v1x" userLabel="Image View2">
+                            <rect key="frame" x="138" y="40" width="101" height="9"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="9" id="IK2-yc-fOd"/>
+                                <constraint firstAttribute="width" constant="100" id="Uyp-Wc-6dl"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="进度条细s3.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Nr-i4-neb" userLabel="Image View3">
+                            <rect key="frame" x="238" y="40" width="100" height="9"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="9" id="SSH-pl-Iar"/>
+                                <constraint firstAttribute="width" constant="100" id="XYP-N9-rXn"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="9" id="Xuo-7l-spw"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="dL5-oT-cOi"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="Xuo-7l-spw"/>
+                                    <exclude reference="dL5-oT-cOi"/>
+                                </mask>
+                            </variation>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="照片上传" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsF-vs-3ST">
+                            <rect key="frame" x="154" y="11" width="69" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.97647058819999999" green="0.25490196079999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置交易密码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbP-Dg-IfG">
+                            <rect key="frame" x="237" y="11" width="102" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="签署协议" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsh-L9-g16">
+                            <rect key="frame" x="54" y="11" width="68" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.97647058819999999" green="0.25490196079999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="LLT-Kn-v1x" firstAttribute="centerX" secondItem="ybP-pM-Ack" secondAttribute="centerX" id="4za-pW-gMR"/>
+                        <constraint firstItem="GuT-Ca-K8b" firstAttribute="top" secondItem="Lsh-L9-g16" secondAttribute="bottom" constant="8" id="8UY-eV-fhw"/>
+                        <constraint firstItem="LLT-Kn-v1x" firstAttribute="centerX" secondItem="BsF-vs-3ST" secondAttribute="centerX" id="Baw-ov-3pl"/>
+                        <constraint firstItem="GuT-Ca-K8b" firstAttribute="centerX" secondItem="Lsh-L9-g16" secondAttribute="centerX" id="Ham-m7-k5V"/>
+                        <constraint firstItem="LLT-Kn-v1x" firstAttribute="leading" secondItem="GuT-Ca-K8b" secondAttribute="trailing" id="JpY-yX-yjJ"/>
+                        <constraint firstItem="8Nr-i4-neb" firstAttribute="top" secondItem="hbP-Dg-IfG" secondAttribute="bottom" constant="8" id="NwB-9X-TxK"/>
+                        <constraint firstAttribute="height" constant="65" id="W5f-43-UAi"/>
+                        <constraint firstItem="8Nr-i4-neb" firstAttribute="top" secondItem="ybP-pM-Ack" secondAttribute="top" constant="40" id="XsY-yF-e6q"/>
+                        <constraint firstItem="GuT-Ca-K8b" firstAttribute="top" secondItem="ybP-pM-Ack" secondAttribute="top" constant="40" id="YWk-Xn-Chc"/>
+                        <constraint firstItem="BsF-vs-3ST" firstAttribute="centerX" secondItem="ybP-pM-Ack" secondAttribute="centerX" id="Z6v-gd-mC7"/>
+                        <constraint firstItem="8Nr-i4-neb" firstAttribute="centerX" secondItem="hbP-Dg-IfG" secondAttribute="centerX" id="aOf-3F-eUY"/>
+                        <constraint firstItem="LLT-Kn-v1x" firstAttribute="top" secondItem="ybP-pM-Ack" secondAttribute="top" constant="40" id="hEc-wg-6Dh"/>
+                        <constraint firstItem="LLT-Kn-v1x" firstAttribute="top" secondItem="BsF-vs-3ST" secondAttribute="bottom" constant="8" id="sOL-R7-Dgi"/>
+                        <constraint firstItem="8Nr-i4-neb" firstAttribute="leading" secondItem="LLT-Kn-v1x" secondAttribute="trailing" id="xnZ-Oj-SnG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ybP-pM-Ack" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TGf-8M-ilk"/>
+                <constraint firstItem="ybP-pM-Ack" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WeN-ip-09Z"/>
+                <constraint firstAttribute="trailing" secondItem="ybP-pM-Ack" secondAttribute="trailing" id="pgq-oX-vI2"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="进度条细s1.png" width="100" height="9"/>
+        <image name="进度条细s2.png" width="100" height="9"/>
+        <image name="进度条细s3.png" width="100" height="9"/>
+    </resources>
+</document>

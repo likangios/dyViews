@@ -1,0 +1,22 @@
+//
+//  dyViews.pch
+//  dyViews
+//
+//  Created by FengLing on 15/11/30.
+//  Copyright © 2015年 lk. All rights reserved.
+//
+
+#ifndef dyViews_pch
+#define dyViews_pch
+#import <Masonry/Masonry.h>
+
+
+#define ImagesRequire @"·完整拍摄身份证原件照片\n·照片上的文字清晰可辨\n·照片无遮挡、无光斑"
+
+
+#define ScreenWidth  [UIScreen mainScreen].bounds.size.width
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#endif /* dyViews_pch */
