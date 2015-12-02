@@ -1,23 +1,25 @@
 //
-//  UploadImageSecondVC.m
+//  UploadImageThirdVC.m
 //  dyViews
 //
-//  Created by FengLing on 15/11/30.
+//  Created by FengLing on 15/12/2.
 //  Copyright © 2015年 lk. All rights reserved.
 //
 
-#import "UploadImageSecondVC.h"
 #import "UploadImageThirdVC.h"
 
+//views
 #import "AccountProgressView.h"
 #import "DefaultPhotoView.h"
 #import "ImagesRequireView.h"
 #import "SelectImageAlertView.h"
 #import "SelectImageNoPreviewAlertView.h"
-#import "CustomUIImagePickerVC.h"
 #import "Preview.h"
+#import "ImageUploadSuccessAlertView.h"
+//controller
+#import "CustomUIImagePickerVC.h"
 
-@interface UploadImageSecondVC ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface UploadImageThirdVC ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 /**
  *  要上传的图片
  */
@@ -63,7 +65,7 @@
 
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf=self
 
-@implementation UploadImageSecondVC
+@implementation UploadImageThirdVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -75,7 +77,7 @@
 #pragma mark Views
 - (void)creatView{
     _accountProgressView = [[AccountProgressView alloc]init];
-    _accountProgressView.uploadImageLabel.text = @"照片上传(1/3)";
+    _accountProgressView.uploadImageLabel.text = @"照片上传(2/3)";
     [self.view addSubview:_accountProgressView];
     _requireView = [[ImagesRequireView alloc]init];
     [self.view addSubview:_requireView];
@@ -203,8 +205,9 @@
 
 - (IBAction)NextBtnClick:(id)sender {
     NSLog(@"下一步");
-    
-    [self.navigationController pushViewController:[[UploadImageThirdVC alloc]init] animated:YES];
+    [ImageUploadSuccessAlertView showViewAt:self.view.window ok:^{
+        NSLog(@"OK");
+    }];
 }
 #pragma mark method
 
@@ -216,8 +219,8 @@
  *  选择照片后更新UI
  */
 - (void)updateUI{
-    self.accountProgressView.uploadImageLabel.text = @"照片上传(2/3)";
-    self.TitleLabel.text = @"二代身份证反面照";
+    self.accountProgressView.uploadImageLabel.text = @"照片上传(3/3)";
+    self.TitleLabel.text = @"手持确认书";
     self.PhotoImageView.image =self.needUploadImage;
     self.DefaultView.hidden = YES;
     self.NextBtn.hidden = NO;

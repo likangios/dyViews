@@ -9,6 +9,8 @@
 #import "SignAgreementVC.h"
 #import "AccountFinishVC.h"
 #import "UploadImageFirstVC.h"
+#import "UploadImageSecondVC.h"
+#import "UploadImageThirdVC.h"
 #import "ttttViewController.h"
 
 @interface SignAgreementVC ()
@@ -34,7 +36,7 @@
 }
 - (IBAction)ConfirmClick:(id)sender {
     
-[self.navigationController pushViewController:[[UploadImageFirstVC alloc]init] animated:YES];
+[self.navigationController pushViewController:[[UploadImageSecondVC alloc]initWithNibName:@"UploadImageSecondVC" bundle:nil] animated:YES];
     
 //    [self.navigationController pushViewController:[[ttttViewController alloc]init] animated:YES];
 }

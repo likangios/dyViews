@@ -1,31 +1,34 @@
 //
-//  SelectImageAlertView.m
+//  SelectImageNoPreviewAlertView.m
 //  dyViews
 //
-//  Created by FengLing on 15/11/26.
+//  Created by FengLing on 15/12/2.
 //  Copyright © 2015年 lk. All rights reserved.
 //
 
-#import "SelectImageAlertView.h"
+#import "SelectImageNoPreviewAlertView.h"
 
 typedef void(^blocks)();
 
-@interface SelectImageAlertView ()
+@interface SelectImageNoPreviewAlertView ()
 {
-    blocks _previewBlock;
     blocks _cameraBlock;
     blocks _albumBlock;
 }
-
 @end
 
-@implementation SelectImageAlertView
+@implementation SelectImageNoPreviewAlertView
 
-
-- (instancetype)initWithShowView:(UIView *)view Preview:(void(^)())priview Camera:(void(^)())camera Album:(void (^)())album{
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+}
+*/
+- (instancetype)initWithShowView:(UIView *)view  Camera:(void(^)())camera Album:(void (^)())album{
     self = [super initWithFrame:view.frame];
     if (self) {
-        _previewBlock = priview;
         _cameraBlock = camera;
         _albumBlock = album;
         
@@ -34,7 +37,7 @@ typedef void(^blocks)();
         self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.2];
         CGFloat width = 292;
         
-        CGFloat height = 147;
+        CGFloat height = 98;
         
         UIView *v = [[UIView alloc]init];
         
@@ -48,11 +51,11 @@ typedef void(^blocks)();
         
         [self addSubview:v];
         
-        NSArray *arr = @[@"预览",@"拍照",@"相册"];
+        NSArray *arr = @[@"拍照",@"相册"];
         
         CGFloat btnW = height/arr.count;
         
-        for (int i = 0; i<3; i++) {
+        for (int i = 0; i<arr.count; i++) {
             
             UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
             btn.frame = CGRectMake(21,btnW*i, width-42, btnW);
@@ -63,7 +66,7 @@ typedef void(^blocks)();
             [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
             [v addSubview:btn];
             if (i>0) {
-                UIView *l = [[UIView alloc]initWithFrame:CGRectMake(0,i*btnW, width, 1)];
+                UIView *l = [[UIView alloc]initWithFrame:CGRectMake(0,i*btnW, width, 0.5)];
                 l.backgroundColor = [UIColor grayColor];
                 [v addSubview:l];
             }
@@ -80,21 +83,13 @@ typedef void(^blocks)();
     switch (btn.tag) {
         case 1:
         {
-            NSLog(@"预览");
-            if (_previewBlock) {
-                _previewBlock();
-            }
-        }
-            break;
-        case 2:
-        {
             NSLog(@"拍照");
             if (_cameraBlock) {
                 _cameraBlock();
             }
         }
             break;
-        case 3:
+        case 2:
         {
             NSLog(@"相册");
             if (_albumBlock) {
@@ -111,10 +106,8 @@ typedef void(^blocks)();
     
     [self removeFromSuperview];
 }
-+ (void)showViewAt:(UIView *)showview Preview:(void(^)())priview Camera:(void(^)())camera Album:(void (^)())album{
-
-    SelectImageAlertView *v = [[SelectImageAlertView alloc]initWithShowView:showview Preview:priview Camera:camera Album:album];
++ (void)showViewAt:(UIView *)showview Camera:(void(^)())camera Album:(void (^)())album{
+    SelectImageNoPreviewAlertView *v = [[SelectImageNoPreviewAlertView alloc]initWithShowView:showview  Camera:camera Album:album];
     [showview addSubview:v];
-    
 }
 @end

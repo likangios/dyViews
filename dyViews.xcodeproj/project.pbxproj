@@ -45,6 +45,11 @@
 		6154FA831C082462000FBF2E /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6154FA821C082462000FBF2E /* check@2x.png */; };
 		6155360D1C0D42B6009209DD /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6155360C1C0D42B6009209DD /* TestViewController.m */; };
 		615536111C0D4B06009209DD /* ttttViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6155360F1C0D4B06009209DD /* ttttViewController.m */; };
+		61569BAB1C0E8A8D006CF103 /* SelectImageNoPreviewAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61569BAA1C0E8A8D006CF103 /* SelectImageNoPreviewAlertView.m */; };
+		61569BAE1C0E9212006CF103 /* CustomUIImagePickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 61569BAD1C0E9212006CF103 /* CustomUIImagePickerVC.m */; };
+		61569BB21C0EA181006CF103 /* UploadImageThirdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 61569BB01C0EA181006CF103 /* UploadImageThirdVC.m */; };
+		61569BB31C0EA181006CF103 /* UploadImageThirdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61569BB11C0EA181006CF103 /* UploadImageThirdVC.xib */; };
+		61569BB51C0EBD9D006CF103 /* second.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61569BB41C0EBD9D006CF103 /* second.xib */; };
 		61E64B9F1C06DCFA00641252 /* ImageUploadSuccessAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E64B9E1C06DCFA00641252 /* ImageUploadSuccessAlertView.m */; };
 		61E64BA11C06E4CE00641252 /* ok(tanchuan)_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E64BA01C06E4CE00641252 /* ok(tanchuan)_@2x.png */; };
 		61E64C021C06F0B700641252 /* SelectImageAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E64C011C06F0B700641252 /* SelectImageAlertView.m */; };
@@ -129,6 +134,14 @@
 		6155360C1C0D42B6009209DD /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		6155360E1C0D4B06009209DD /* ttttViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttttViewController.h; sourceTree = "<group>"; };
 		6155360F1C0D4B06009209DD /* ttttViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttttViewController.m; sourceTree = "<group>"; };
+		61569BA91C0E8A8D006CF103 /* SelectImageNoPreviewAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectImageNoPreviewAlertView.h; sourceTree = "<group>"; };
+		61569BAA1C0E8A8D006CF103 /* SelectImageNoPreviewAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectImageNoPreviewAlertView.m; sourceTree = "<group>"; };
+		61569BAC1C0E9212006CF103 /* CustomUIImagePickerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUIImagePickerVC.h; sourceTree = "<group>"; };
+		61569BAD1C0E9212006CF103 /* CustomUIImagePickerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUIImagePickerVC.m; sourceTree = "<group>"; };
+		61569BAF1C0EA181006CF103 /* UploadImageThirdVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImageThirdVC.h; sourceTree = "<group>"; };
+		61569BB01C0EA181006CF103 /* UploadImageThirdVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadImageThirdVC.m; sourceTree = "<group>"; };
+		61569BB11C0EA181006CF103 /* UploadImageThirdVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UploadImageThirdVC.xib; sourceTree = "<group>"; };
+		61569BB41C0EBD9D006CF103 /* second.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = second.xib; sourceTree = "<group>"; };
 		61E64B9D1C06DCFA00641252 /* ImageUploadSuccessAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageUploadSuccessAlertView.h; path = ../ImageUploadSuccessAlertView.h; sourceTree = "<group>"; };
 		61E64B9E1C06DCFA00641252 /* ImageUploadSuccessAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageUploadSuccessAlertView.m; path = ../ImageUploadSuccessAlertView.m; sourceTree = "<group>"; };
 		61E64BA01C06E4CE00641252 /* ok(tanchuan)_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ok(tanchuan)_@2x.png"; path = "../ok(tanchuan)_@2x.png"; sourceTree = "<group>"; };
@@ -189,6 +202,8 @@
 				6118E2621C0C1FE6006C3265 /* child.m */,
 				61E64C001C06F0B700641252 /* SelectImageAlertView.h */,
 				61E64C011C06F0B700641252 /* SelectImageAlertView.m */,
+				61569BA91C0E8A8D006CF103 /* SelectImageNoPreviewAlertView.h */,
+				61569BAA1C0E8A8D006CF103 /* SelectImageNoPreviewAlertView.m */,
 				61E64C031C0701FF00641252 /* Preview.h */,
 				61E64C041C0701FF00641252 /* Preview.m */,
 			);
@@ -249,12 +264,18 @@
 				614B042F1C0D9DF400E58087 /* UploadImageFirstVC.xib */,
 				6118E2641C0C22B3006C3265 /* UploadImageSecondVC.h */,
 				6118E2651C0C22B3006C3265 /* UploadImageSecondVC.m */,
+				61569BB41C0EBD9D006CF103 /* second.xib */,
 				6118E2661C0C22B3006C3265 /* UploadImageSecondVC.xib */,
+				61569BAF1C0EA181006CF103 /* UploadImageThirdVC.h */,
+				61569BB01C0EA181006CF103 /* UploadImageThirdVC.m */,
+				61569BB11C0EA181006CF103 /* UploadImageThirdVC.xib */,
 				6155360B1C0D42B6009209DD /* TestViewController.h */,
 				6155360C1C0D42B6009209DD /* TestViewController.m */,
 				6155360E1C0D4B06009209DD /* ttttViewController.h */,
 				6155360F1C0D4B06009209DD /* ttttViewController.m */,
 				614B04281C0D9C5000E58087 /* ttttViewController.xib */,
+				61569BAC1C0E9212006CF103 /* CustomUIImagePickerVC.h */,
+				61569BAD1C0E9212006CF103 /* CustomUIImagePickerVC.m */,
 				6118E25C1C0BFD16006C3265 /* view */,
 				6154FA711C07F623000FBF2E /* ImageUploadAV */,
 				6154FA6F1C07F1B3000FBF2E /* 2.png */,
@@ -421,6 +442,7 @@
 				6118E26C1C0C26ED006C3265 /* 相册@2x.png in Resources */,
 				6118E2581C0BF9BF006C3265 /* 进度条细s3@2x.png in Resources */,
 				6154FA701C07F1B3000FBF2E /* 2.png in Resources */,
+				61569BB31C0EA181006CF103 /* UploadImageThirdVC.xib in Resources */,
 				6153DF0B1C06B81B00BDFEFE /* LaunchScreen.storyboard in Resources */,
 				6154FA7A1C080534000FBF2E /* card_@2x.png in Resources */,
 				61E64BA11C06E4CE00641252 /* ok(tanchuan)_@2x.png in Resources */,
@@ -431,6 +453,7 @@
 				6118E26A1C0C26E7006C3265 /* 拍照@2x.png in Resources */,
 				6118E24C1C0BE602006C3265 /* checkbox_normal_@2x.png in Resources */,
 				6153DF061C06B81B00BDFEFE /* Main.storyboard in Resources */,
+				61569BB51C0EBD9D006CF103 /* second.xib in Resources */,
 				6154FA831C082462000FBF2E /* check@2x.png in Resources */,
 				614B04291C0D9C5000E58087 /* ttttViewController.xib in Resources */,
 				6154FA7E1C080969000FBF2E /* AccountFinishVC.xib in Resources */,
@@ -500,13 +523,16 @@
 			files = (
 				6118E25B1C0BFABB006C3265 /* AccountProgressView.m in Sources */,
 				6155360D1C0D42B6009209DD /* TestViewController.m in Sources */,
+				61569BAE1C0E9212006CF103 /* CustomUIImagePickerVC.m in Sources */,
 				615536111C0D4B06009209DD /* ttttViewController.m in Sources */,
 				61E64C051C0701FF00641252 /* Preview.m in Sources */,
 				6154FA741C07F834000FBF2E /* AccountNoticeVC.m in Sources */,
+				61569BAB1C0E8A8D006CF103 /* SelectImageNoPreviewAlertView.m in Sources */,
 				61E64B9F1C06DCFA00641252 /* ImageUploadSuccessAlertView.m in Sources */,
 				614B04331C0DA5E400E58087 /* ImagesRequireView.m in Sources */,
 				6128A9C21C0D92C50044F5BF /* DefaultPhotoView.m in Sources */,
 				6118E2481C0BE424006C3265 /* SignAgreementVC.m in Sources */,
+				61569BB21C0EA181006CF103 /* UploadImageThirdVC.m in Sources */,
 				614B042D1C0D9DA500E58087 /* UploadImageFirstVC.m in Sources */,
 				6118E2631C0C1FE6006C3265 /* child.m in Sources */,
 				6154FA811C08098A000FBF2E /* AccountFinishVC.m in Sources */,

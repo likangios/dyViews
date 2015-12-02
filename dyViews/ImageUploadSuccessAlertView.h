@@ -18,7 +18,7 @@
  *
  *  @param showview 要显示的view
  */
-+ (void)showViewAt:(UIView *)showview;
++ (void)showViewAt:(UIView *)showview ok:(void(^)())ok;
 
 @end
 

@@ -9,11 +9,20 @@
 #import "ImageUploadSuccessAlertView.h"
 #import "UIColor+HelpMe.h"
 
+typedef void(^blocks)();
+
+@interface ImageUploadSuccessAlertView ()
+{
+    blocks _ok;
+}
+
+@end
 @implementation ImageUploadSuccessAlertView
 
-- (instancetype)initWithShowView:(UIView *)view{
+- (instancetype)initWithShowView:(UIView *)view OK:(void(^)())ok{
     self = [super initWithFrame:view.frame];
     if (self) {
+        _ok = ok;
         self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.2];
         CGFloat width = 292;
         
@@ -66,13 +75,15 @@
     return self;
 }
 - (void)ok{
-    
+    if (_ok) {
+        _ok();
+    }
     [self removeFromSuperview];
-    
 }
-+ (void)showViewAt:(UIView *)showview{
++ (void)showViewAt:(UIView *)showview ok:(void (^)())ok{
     
-  ImageUploadSuccessAlertView *v = [[ImageUploadSuccessAlertView alloc]initWithShowView:showview];
+  ImageUploadSuccessAlertView *v = [[ImageUploadSuccessAlertView alloc]initWithShowView:showview OK:ok];
+    
     [showview addSubview:v];
 
     
