@@ -18,7 +18,6 @@
 		6118E2601C0C1F94006C3265 /* child.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6118E25F1C0C1F94006C3265 /* child.xib */; };
 		6118E2631C0C1FE6006C3265 /* child.m in Sources */ = {isa = PBXBuildFile; fileRef = 6118E2621C0C1FE6006C3265 /* child.m */; };
 		6118E2671C0C22B3006C3265 /* UploadImageSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6118E2651C0C22B3006C3265 /* UploadImageSecondVC.m */; };
-		6118E2681C0C22B3006C3265 /* UploadImageSecondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6118E2661C0C22B3006C3265 /* UploadImageSecondVC.xib */; };
 		6118E26A1C0C26E7006C3265 /* 拍照@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118E2691C0C26E7006C3265 /* 拍照@2x.png */; };
 		6118E26C1C0C26ED006C3265 /* 相册@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118E26B1C0C26ED006C3265 /* 相册@2x.png */; };
 		6128A9C21C0D92C50044F5BF /* DefaultPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6128A9C11C0D92C50044F5BF /* DefaultPhotoView.m */; };
@@ -49,7 +48,14 @@
 		61569BAE1C0E9212006CF103 /* CustomUIImagePickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 61569BAD1C0E9212006CF103 /* CustomUIImagePickerVC.m */; };
 		61569BB21C0EA181006CF103 /* UploadImageThirdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 61569BB01C0EA181006CF103 /* UploadImageThirdVC.m */; };
 		61569BB31C0EA181006CF103 /* UploadImageThirdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61569BB11C0EA181006CF103 /* UploadImageThirdVC.xib */; };
-		61569BB51C0EBD9D006CF103 /* second.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61569BB41C0EBD9D006CF103 /* second.xib */; };
+		61569BB71C0EBE12006CF103 /* UploadImageSecondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61569BB61C0EBE12006CF103 /* UploadImageSecondVC.xib */; };
+		61569BB91C0EC0F5006CF103 /* testView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61569BB81C0EC0F5006CF103 /* testView.xib */; };
+		61569BBC1C0EC13B006CF103 /* testView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61569BBB1C0EC13B006CF103 /* testView.m */; };
+		61A68DDC1C0EE1BD00166B14 /* ttt2222ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A68DDA1C0EE1BD00166B14 /* ttt2222ViewController.m */; };
+		61A68DDD1C0EE1BD00166B14 /* ttt2222ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A68DDB1C0EE1BD00166B14 /* ttt2222ViewController.xib */; };
+		61A68DDF1C0EE25000166B14 /* AccountProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A68DDE1C0EE25000166B14 /* AccountProgressView.xib */; };
+		61A68DE11C0EE77300166B14 /* DefaultPhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A68DE01C0EE77300166B14 /* DefaultPhotoView.xib */; };
+		61A68DE31C0EE8EE00166B14 /* ImagesRequireView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A68DE21C0EE8EE00166B14 /* ImagesRequireView.xib */; };
 		61E64B9F1C06DCFA00641252 /* ImageUploadSuccessAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E64B9E1C06DCFA00641252 /* ImageUploadSuccessAlertView.m */; };
 		61E64BA11C06E4CE00641252 /* ok(tanchuan)_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E64BA01C06E4CE00641252 /* ok(tanchuan)_@2x.png */; };
 		61E64C021C06F0B700641252 /* SelectImageAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E64C011C06F0B700641252 /* SelectImageAlertView.m */; };
@@ -91,7 +97,6 @@
 		6118E2621C0C1FE6006C3265 /* child.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = child.m; sourceTree = "<group>"; };
 		6118E2641C0C22B3006C3265 /* UploadImageSecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImageSecondVC.h; sourceTree = "<group>"; };
 		6118E2651C0C22B3006C3265 /* UploadImageSecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadImageSecondVC.m; sourceTree = "<group>"; };
-		6118E2661C0C22B3006C3265 /* UploadImageSecondVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UploadImageSecondVC.xib; sourceTree = "<group>"; };
 		6118E2691C0C26E7006C3265 /* 拍照@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "拍照@2x.png"; sourceTree = "<group>"; };
 		6118E26B1C0C26ED006C3265 /* 相册@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "相册@2x.png"; sourceTree = "<group>"; };
 		6118E26D1C0C30B4006C3265 /* dyViews.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dyViews.pch; sourceTree = "<group>"; };
@@ -141,7 +146,16 @@
 		61569BAF1C0EA181006CF103 /* UploadImageThirdVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImageThirdVC.h; sourceTree = "<group>"; };
 		61569BB01C0EA181006CF103 /* UploadImageThirdVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadImageThirdVC.m; sourceTree = "<group>"; };
 		61569BB11C0EA181006CF103 /* UploadImageThirdVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UploadImageThirdVC.xib; sourceTree = "<group>"; };
-		61569BB41C0EBD9D006CF103 /* second.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = second.xib; sourceTree = "<group>"; };
+		61569BB61C0EBE12006CF103 /* UploadImageSecondVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UploadImageSecondVC.xib; sourceTree = "<group>"; };
+		61569BB81C0EC0F5006CF103 /* testView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testView.xib; sourceTree = "<group>"; };
+		61569BBA1C0EC13B006CF103 /* testView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testView.h; sourceTree = "<group>"; };
+		61569BBB1C0EC13B006CF103 /* testView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testView.m; sourceTree = "<group>"; };
+		61A68DD91C0EE1BD00166B14 /* ttt2222ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttt2222ViewController.h; sourceTree = "<group>"; };
+		61A68DDA1C0EE1BD00166B14 /* ttt2222ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttt2222ViewController.m; sourceTree = "<group>"; };
+		61A68DDB1C0EE1BD00166B14 /* ttt2222ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttt2222ViewController.xib; sourceTree = "<group>"; };
+		61A68DDE1C0EE25000166B14 /* AccountProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountProgressView.xib; sourceTree = "<group>"; };
+		61A68DE01C0EE77300166B14 /* DefaultPhotoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultPhotoView.xib; sourceTree = "<group>"; };
+		61A68DE21C0EE8EE00166B14 /* ImagesRequireView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagesRequireView.xib; sourceTree = "<group>"; };
 		61E64B9D1C06DCFA00641252 /* ImageUploadSuccessAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageUploadSuccessAlertView.h; path = ../ImageUploadSuccessAlertView.h; sourceTree = "<group>"; };
 		61E64B9E1C06DCFA00641252 /* ImageUploadSuccessAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageUploadSuccessAlertView.m; path = ../ImageUploadSuccessAlertView.m; sourceTree = "<group>"; };
 		61E64BA01C06E4CE00641252 /* ok(tanchuan)_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ok(tanchuan)_@2x.png"; path = "../ok(tanchuan)_@2x.png"; sourceTree = "<group>"; };
@@ -193,10 +207,13 @@
 			children = (
 				6118E2591C0BFABB006C3265 /* AccountProgressView.h */,
 				6118E25A1C0BFABB006C3265 /* AccountProgressView.m */,
+				61A68DDE1C0EE25000166B14 /* AccountProgressView.xib */,
 				6128A9C01C0D92C50044F5BF /* DefaultPhotoView.h */,
 				6128A9C11C0D92C50044F5BF /* DefaultPhotoView.m */,
+				61A68DE01C0EE77300166B14 /* DefaultPhotoView.xib */,
 				614B04311C0DA5E400E58087 /* ImagesRequireView.h */,
 				614B04321C0DA5E400E58087 /* ImagesRequireView.m */,
+				61A68DE21C0EE8EE00166B14 /* ImagesRequireView.xib */,
 				6118E25F1C0C1F94006C3265 /* child.xib */,
 				6118E2611C0C1FE6006C3265 /* child.h */,
 				6118E2621C0C1FE6006C3265 /* child.m */,
@@ -264,8 +281,7 @@
 				614B042F1C0D9DF400E58087 /* UploadImageFirstVC.xib */,
 				6118E2641C0C22B3006C3265 /* UploadImageSecondVC.h */,
 				6118E2651C0C22B3006C3265 /* UploadImageSecondVC.m */,
-				61569BB41C0EBD9D006CF103 /* second.xib */,
-				6118E2661C0C22B3006C3265 /* UploadImageSecondVC.xib */,
+				61569BB61C0EBE12006CF103 /* UploadImageSecondVC.xib */,
 				61569BAF1C0EA181006CF103 /* UploadImageThirdVC.h */,
 				61569BB01C0EA181006CF103 /* UploadImageThirdVC.m */,
 				61569BB11C0EA181006CF103 /* UploadImageThirdVC.xib */,
@@ -274,8 +290,14 @@
 				6155360E1C0D4B06009209DD /* ttttViewController.h */,
 				6155360F1C0D4B06009209DD /* ttttViewController.m */,
 				614B04281C0D9C5000E58087 /* ttttViewController.xib */,
+				61A68DD91C0EE1BD00166B14 /* ttt2222ViewController.h */,
+				61A68DDA1C0EE1BD00166B14 /* ttt2222ViewController.m */,
+				61A68DDB1C0EE1BD00166B14 /* ttt2222ViewController.xib */,
 				61569BAC1C0E9212006CF103 /* CustomUIImagePickerVC.h */,
 				61569BAD1C0E9212006CF103 /* CustomUIImagePickerVC.m */,
+				61569BB81C0EC0F5006CF103 /* testView.xib */,
+				61569BBA1C0EC13B006CF103 /* testView.h */,
+				61569BBB1C0EC13B006CF103 /* testView.m */,
 				6118E25C1C0BFD16006C3265 /* view */,
 				6154FA711C07F623000FBF2E /* ImageUploadAV */,
 				6154FA6F1C07F1B3000FBF2E /* 2.png */,
@@ -446,6 +468,7 @@
 				6153DF0B1C06B81B00BDFEFE /* LaunchScreen.storyboard in Resources */,
 				6154FA7A1C080534000FBF2E /* card_@2x.png in Resources */,
 				61E64BA11C06E4CE00641252 /* ok(tanchuan)_@2x.png in Resources */,
+				61A68DDD1C0EE1BD00166B14 /* ttt2222ViewController.xib in Resources */,
 				6118E2601C0C1F94006C3265 /* child.xib in Resources */,
 				6153DF081C06B81B00BDFEFE /* Assets.xcassets in Resources */,
 				6118E2561C0BF9BF006C3265 /* 进度条细s1@2x.png in Resources */,
@@ -453,13 +476,16 @@
 				6118E26A1C0C26E7006C3265 /* 拍照@2x.png in Resources */,
 				6118E24C1C0BE602006C3265 /* checkbox_normal_@2x.png in Resources */,
 				6153DF061C06B81B00BDFEFE /* Main.storyboard in Resources */,
-				61569BB51C0EBD9D006CF103 /* second.xib in Resources */,
 				6154FA831C082462000FBF2E /* check@2x.png in Resources */,
+				61A68DE11C0EE77300166B14 /* DefaultPhotoView.xib in Resources */,
+				61A68DE31C0EE8EE00166B14 /* ImagesRequireView.xib in Resources */,
+				61A68DDF1C0EE25000166B14 /* AccountProgressView.xib in Resources */,
 				614B04291C0D9C5000E58087 /* ttttViewController.xib in Resources */,
 				6154FA7E1C080969000FBF2E /* AccountFinishVC.xib in Resources */,
+				61569BB91C0EC0F5006CF103 /* testView.xib in Resources */,
 				6154FA761C07F851000FBF2E /* AccountNoticeVC.xib in Resources */,
 				6118E24D1C0BE602006C3265 /* gou_@2x.png in Resources */,
-				6118E2681C0C22B3006C3265 /* UploadImageSecondVC.xib in Resources */,
+				61569BB71C0EBE12006CF103 /* UploadImageSecondVC.xib in Resources */,
 				6154FA7C1C08053A000FBF2E /* WIFI_@2x.png in Resources */,
 				6118E2491C0BE424006C3265 /* SignAgreementVC.xib in Resources */,
 				6154FA781C08052B000FBF2E /* ID_@2x.png in Resources */,
@@ -524,7 +550,9 @@
 				6118E25B1C0BFABB006C3265 /* AccountProgressView.m in Sources */,
 				6155360D1C0D42B6009209DD /* TestViewController.m in Sources */,
 				61569BAE1C0E9212006CF103 /* CustomUIImagePickerVC.m in Sources */,
+				61569BBC1C0EC13B006CF103 /* testView.m in Sources */,
 				615536111C0D4B06009209DD /* ttttViewController.m in Sources */,
+				61A68DDC1C0EE1BD00166B14 /* ttt2222ViewController.m in Sources */,
 				61E64C051C0701FF00641252 /* Preview.m in Sources */,
 				6154FA741C07F834000FBF2E /* AccountNoticeVC.m in Sources */,
 				61569BAB1C0E8A8D006CF103 /* SelectImageNoPreviewAlertView.m in Sources */,

@@ -13,19 +13,19 @@
 /**
  *  拍照 icon
  */
-@property (strong, nonatomic)  UIImageView *imageviewL;
+@property (weak, nonatomic)  IBOutlet UIImageView *imageviewL;
 /**
  *  相册 icon
  */
-@property (strong, nonatomic)  UIImageView *imageviewR;
+@property (strong, nonatomic) IBOutlet UIImageView *imageviewR;
 /**
  *  拍照 title
  */
-@property (strong, nonatomic)  UILabel *labelL;
+@property (strong, nonatomic) IBOutlet UILabel *labelL;
 /**
  *  相册 title
  */
-@property (strong, nonatomic)  UILabel *labelR;
+@property (strong, nonatomic) IBOutlet UILabel *labelR;
 
 
 @end
@@ -34,7 +34,7 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        
+        /*
         _imageviewL = [[UIImageView alloc]init];
         _imageviewL.image = [UIImage imageNamed:@"拍照"];
         [self addSubview:_imageviewL];
@@ -85,6 +85,7 @@
             make.centerX.equalTo(_imageviewR);
             make.top.equalTo(_imageviewR.mas_bottom).with.offset(12);
         }];
+         */
         
     }
     return self;

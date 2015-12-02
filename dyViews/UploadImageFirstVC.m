@@ -30,14 +30,7 @@
  *  开户进度
  */
 @property (nonatomic,strong)  AccountProgressView *accountProgressView;
-/**
- *  灰低view承载 photoView DefaultView
- */
-@property (weak, nonatomic) IBOutlet UIView *grayView;
-/**
- *  用来显示照片的ImageView
- */
-@property (weak, nonatomic) IBOutlet UIImageView *PhotoImageView;
+
 /**
  *  初始化没有选择照片时的view
  */
@@ -57,7 +50,7 @@
 /**
  *  请使用二代。。。
  */
-@property (weak, nonatomic) IBOutlet UILabel *TitleLabel;
+@property (strong, nonatomic)  UILabel *TitleLabel;
 
 @end
 
@@ -74,12 +67,24 @@
 
 #pragma mark Views
 - (void)creatView{
-    _accountProgressView = [[AccountProgressView alloc]init];
+    _accountProgressView =[[[NSBundle mainBundle]loadNibNamed:@"AccountProgressView" owner:self options:nil]lastObject];
     [self.view addSubview:_accountProgressView];
-    _requireView = [[ImagesRequireView alloc]init];
+    
+    _requireView = [[[NSBundle mainBundle]loadNibNamed:@"ImagesRequireView" owner:self options:nil]lastObject];
+    
     [self.view addSubview:_requireView];
-    _DefaultView = [[DefaultPhotoView alloc]init];
-    [self.grayView addSubview:_DefaultView];
+    
+    _DefaultView = [[[NSBundle mainBundle]loadNibNamed:@"DefaultPhotoView" owner:self options:nil]lastObject];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(TapClick)];
+    [_DefaultView addGestureRecognizer:tap];
+    [self.view addSubview:_DefaultView];
+    
+    _TitleLabel = [[UILabel alloc]init];
+    _TitleLabel.font = [UIFont systemFontOfSize:16];
+    _TitleLabel.text = @"请使用二代身份证且在有效期内";
+    _TitleLabel.textAlignment = NSTextAlignmentCenter;
+    _TitleLabel.textColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.87];
+    [self.view addSubview:_TitleLabel];
 }
 #pragma mark Constraints
 /**
@@ -102,7 +107,7 @@
     }];
     
 //     灰底
-    [self.grayView mas_updateConstraints:^(MASConstraintMaker *make) {
+    [self.DefaultView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(262);
         if(self.NextBtn.hidden){
             make.height.mas_equalTo(134);
@@ -112,19 +117,10 @@
         make.centerX.equalTo(ws.view);
         make.top.equalTo(ws.TitleLabel.mas_bottom).with.offset(12);
     }];
-    //    图片imageView
-    [self.PhotoImageView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(ws.grayView).with.insets(UIEdgeInsetsMake(0, 0, 0, 0));
-    }];
-//    默认图片
-    [_DefaultView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.size.equalTo(ws.grayView);
-        make.center.equalTo(ws.grayView);
-    }];
 //    detailLabel
     [self.detailLabel mas_updateConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(ws.view);
-        make.top.equalTo(ws.grayView.mas_bottom).with.offset(8);
+        make.top.equalTo(ws.DefaultView.mas_bottom).with.offset(8);
         make.height.mas_equalTo(@21);
     }];
 //    下一张
@@ -138,7 +134,7 @@
     //    图片要求
     [_requireView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(ws.view);
-        make.width.mas_equalTo(300);
+        make.width.mas_equalTo(265);
         make.height.mas_equalTo(100);
         if (self.NextBtn.hidden) {
             make.top.equalTo(ws.detailLabel.mas_bottom).with.offset(35);
@@ -153,12 +149,12 @@
  *
  *  @param sender
  */
-- (IBAction)TapClick:(id)sender {
+- (void)TapClick {
     NSLog(@"tap");
-    if (_PhotoImageView.image){
+    if (_needUploadImage){
         [SelectImageAlertView showViewAt:self.view.window Preview:^{
             NSLog(@"预览");
-            [Preview showViewAt:self.view.window withImage:_PhotoImageView.image];
+            [Preview showViewAt:self.view.window withImage:_needUploadImage];
         } Camera:^{
             [self takePhoto];
             NSLog(@"拍照");
@@ -217,8 +213,8 @@
 - (void)updateUI{
     self.accountProgressView.uploadImageLabel.text = @"照片上传(1/3)";
     self.TitleLabel.text = @"二代身份证正面照";
-    self.PhotoImageView.image =self.needUploadImage;
-    self.DefaultView.hidden = YES;
+    self.DefaultView.PhotoImageView.image =self.needUploadImage;
+    self.DefaultView.DefaultView.hidden = YES;
     self.NextBtn.hidden = NO;
 }
 #pragma mark ----

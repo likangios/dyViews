@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="testView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="testView">
+            <rect key="frame" x="0.0" y="0.0" width="267" height="235"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OnJ-aa-ZGw">
+                    <rect key="frame" x="115" y="50" width="37" height="21"/>
+                    <color key="backgroundColor" red="0.87073090105372986" green="1" blue="0.36309466580184446" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="37" id="cQF-fb-xHT"/>
+                        <constraint firstAttribute="height" constant="21" id="ffV-Pc-OE8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3k6-R7-hjc">
+                    <rect key="frame" x="111" y="10" width="46" height="21"/>
+                    <color key="backgroundColor" red="0.54850660397367657" green="0.94637156026750235" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="O5W-Me-n6x"/>
+                        <constraint firstAttribute="height" constant="21" id="kh8-Of-9QH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3k6-R7-hjc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2sq-Jn-FFr"/>
+                <constraint firstItem="OnJ-aa-ZGw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="33" id="7Or-bw-q3M"/>
+                <constraint firstItem="3k6-R7-hjc" firstAttribute="leading" secondItem="OnJ-aa-ZGw" secondAttribute="trailing" constant="20" id="CsM-UG-DCL"/>
+                <constraint firstItem="3k6-R7-hjc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="X0w-au-DfM"/>
+                <constraint firstItem="OnJ-aa-ZGw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rx7-aW-dOg"/>
+                <constraint firstItem="OnJ-aa-ZGw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="tuo-tz-TeX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="CsM-UG-DCL"/>
+                    <exclude reference="7Or-bw-q3M"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="label1" destination="OnJ-aa-ZGw" id="98c-5p-QkA"/>
+                <outlet property="label2" destination="3k6-R7-hjc" id="yM6-Vd-Lj5"/>
+            </connections>
+            <point key="canvasLocation" x="224.5" y="-119.5"/>
+        </view>
+    </objects>
+</document>

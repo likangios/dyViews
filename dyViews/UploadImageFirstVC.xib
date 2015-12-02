@@ -8,10 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UploadImageFirstVC">
             <connections>
                 <outlet property="NextBtn" destination="reX-bK-taT" id="8Le-Q0-G7s"/>
-                <outlet property="PhotoImageView" destination="ds6-SY-tue" id="4q1-l6-O8D"/>
-                <outlet property="TitleLabel" destination="r7h-2C-9Sn" id="Y4A-Dz-753"/>
                 <outlet property="detailLabel" destination="7rl-eQ-mrA" id="18t-fk-cyV"/>
-                <outlet property="grayView" destination="PsT-GV-Ho6" id="xKz-qr-ASk"/>
                 <outlet property="view" destination="l5K-Qs-hD7" id="hKF-3e-tuX"/>
             </connections>
         </placeholder>
@@ -20,28 +17,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请使用二代身份证且在有效期内" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="r7h-2C-9Sn">
-                    <rect key="frame" x="0.0" y="83" width="375" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <view contentMode="scaleToFill" id="PsT-GV-Ho6">
-                    <rect key="frame" x="57" y="116" width="262" height="134"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ds6-SY-tue">
-                            <rect key="frame" x="0.0" y="0.0" width="262" height="134"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <gestureRecognizers/>
-                        </imageView>
-                    </subviews>
-                    <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
-                    <connections>
-                        <outletCollection property="gestureRecognizers" destination="VPq-dO-72N" appends="YES" id="V4P-mH-fGV"/>
-                    </connections>
-                </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="仅需上传身份证正反面照片及手持确认书照片" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7rl-eQ-mrA">
                     <rect key="frame" x="0.0" y="262" width="375" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -66,11 +41,5 @@
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="496.5" y="-985.5"/>
         </view>
-        <tapGestureRecognizer id="VPq-dO-72N">
-            <connections>
-                <action selector="TapClick:" destination="-1" id="9H9-Ov-XGX"/>
-                <outlet property="delegate" destination="-1" id="HlG-lJ-Z9S"/>
-            </connections>
-        </tapGestureRecognizer>
     </objects>
 </document>

@@ -12,26 +12,26 @@
 /**
  *  签署协议icon
  */
-@property (strong, nonatomic)  UIImageView *step1;
+@property (weak, nonatomic) IBOutlet UIImageView *step1;
 /**
  *  照片上传icon
  */
-@property (strong, nonatomic)  UIImageView *step2;
+@property (strong, nonatomic) IBOutlet UIImageView *step2;
 /**
  *  设置交易密码
  */
-@property (strong, nonatomic)  UIImageView *step3;
+@property (strong, nonatomic) IBOutlet UIImageView *step3;
 /**
  *  签署协议title
  */
-@property (strong, nonatomic)  UILabel *signAgreementLabel;
+@property (strong, nonatomic) IBOutlet UILabel *signAgreementLabel;
 /**
  *  照片上传title
  */
-@property (strong, nonatomic)  UILabel *uploadImageLabel;
+@property (strong, nonatomic) IBOutlet UILabel *uploadImageLabel;
 /**
  *  设置交易密码title
  */
-@property (strong, nonatomic)  UILabel *setPasswordLabel;
+@property (strong, nonatomic) IBOutlet UILabel *setPasswordLabel;
 
 @end

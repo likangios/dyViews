@@ -36,7 +36,7 @@
 }
 - (IBAction)ConfirmClick:(id)sender {
     
-[self.navigationController pushViewController:[[UploadImageSecondVC alloc]initWithNibName:@"UploadImageSecondVC" bundle:nil] animated:YES];
+[self.navigationController pushViewController:[[UploadImageFirstVC alloc]init] animated:YES];
     
 //    [self.navigationController pushViewController:[[ttttViewController alloc]init] animated:YES];
 }

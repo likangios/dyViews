@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ImagesRequireView : UIView
+/**
+ *  照片详细要求
+ */
+@property (nonatomic,weak) IBOutlet UILabel *requireDetailLabel;
+/**
+ * 上传照片要求：
+ */
+@property (nonatomic,weak) IBOutlet UILabel *titleLabel;
 
 @end

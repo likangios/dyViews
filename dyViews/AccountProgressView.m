@@ -19,6 +19,7 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
+        /*
         self.backgroundColor = [UIColor colorWithRed:237/255.0 green:237/255.0 blue:237/255.0 alpha:1.0];
         
         NSArray *images = @[@"进度条细s1",@"进度条细s2.png",@"进度条细s3"];
@@ -66,6 +67,8 @@
                     break;
             }
         }
+         */
+        
         
     }
     return self;

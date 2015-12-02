@@ -9,12 +9,7 @@
 #import "ImagesRequireView.h"
 
 @interface ImagesRequireView ()
-{
-//    上传照片要求：
-    UILabel *_titleLabel;
-//      照片详细要求
-    UILabel *_requireDetailLabel;
-}
+
 @end
 
 @implementation ImagesRequireView
@@ -22,6 +17,7 @@
 -(instancetype)initWithFrame:(CGRect)frame{
     self=  [super initWithFrame:frame];
     if (self) {
+        /*
         _titleLabel = [[UILabel alloc]init];
         _titleLabel.textAlignment = NSTextAlignmentLeft;
         _titleLabel.textColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.54];
@@ -53,9 +49,18 @@
         NSMutableAttributedString *attstr = [[NSMutableAttributedString alloc]initWithString:string];
         [attstr addAttribute:NSParagraphStyleAttributeName value:paragstyle range:NSMakeRange(0, string.length)];
         _requireDetailLabel.attributedText = attstr;
-        
+     */
     }
     return self;
+}
+- (void)drawRect:(CGRect)rect{
+    [super drawRect:rect];
+    NSString *string = ImagesRequire;
+    NSMutableParagraphStyle *paragstyle = [[NSMutableParagraphStyle alloc]init];
+    [paragstyle setLineSpacing:3];//调整行间距
+    NSMutableAttributedString *attstr = [[NSMutableAttributedString alloc]initWithString:string];
+    [attstr addAttribute:NSParagraphStyleAttributeName value:paragstyle range:NSMakeRange(0, string.length)];
+    _requireDetailLabel.attributedText = attstr;
 }
 /*
 // Only override drawRect: if you perform custom drawing.

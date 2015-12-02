@@ -10,4 +10,8 @@
 
 @interface DefaultPhotoView : UIView
 
+
+@property (weak, nonatomic) IBOutlet UIImageView *PhotoImageView;
+@property (weak, nonatomic) IBOutlet UIView *DefaultView;
+
 @end
