@@ -6,10 +6,10 @@
 //  Copyright © 2015年 lk. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "UploadImageBaseVC.h"
 /**
  *  上传身份证正面照
  */
-@interface UploadImageFirstVC : ViewController
+@interface UploadImageFirstVC : UploadImageBaseVC
 
 @end

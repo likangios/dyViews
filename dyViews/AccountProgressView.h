@@ -33,5 +33,10 @@
  *  设置交易密码title
  */
 @property (strong, nonatomic) IBOutlet UILabel *setPasswordLabel;
-
+/**
+ *  设置当前进度 0 没开始 1 签署协议 2 照片上传 3 设置交易密码 other 完成 默认2
+ *
+ *  @param step 
+ */
+- (void)setCurrentStep:(NSInteger)step;
 @end

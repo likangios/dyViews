@@ -7,11 +7,14 @@
 //
 
 #import "SignAgreementVC.h"
+#import "SelectVipUnitVCViewController.h"
+//test
 #import "AccountFinishVC.h"
 #import "UploadImageFirstVC.h"
 #import "UploadImageSecondVC.h"
 #import "UploadImageThirdVC.h"
 #import "ttttViewController.h"
+#import "SetExchangePasswordVC.h"
 
 @interface SignAgreementVC ()
 @property (weak, nonatomic) IBOutlet UIButton *AgreeAgreementBtn;
@@ -36,7 +39,7 @@
 }
 - (IBAction)ConfirmClick:(id)sender {
     
-[self.navigationController pushViewController:[[UploadImageFirstVC alloc]init] animated:YES];
+[self.navigationController pushViewController:[[SelectVipUnitVCViewController alloc]init] animated:YES];
     
 //    [self.navigationController pushViewController:[[ttttViewController alloc]init] animated:YES];
 }

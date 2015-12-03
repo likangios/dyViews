@@ -73,6 +73,74 @@
     }
     return self;
 }
+- (void)setCurrentStep:(NSInteger)step{
+    
+    
+   UIColor *redColor = [UIColor colorWithRed:250/255.0 green:91/255.0 blue:82/255.0 alpha:1.0];
+    
+    UIColor *grayColor = [UIColor grayColor];
+    
+//    完成icon
+    UIImage *image1 = [UIImage imageNamed:@"进度条细s1"];
+//    进行中icon
+    UIImage *image2 = [UIImage imageNamed:@"进度条细s2"];
+//    没开始icon
+    UIImage *image3 = [UIImage imageNamed:@"进度条细s3"];
+    
+    switch (step) {
+        case 0:
+        {
+            _signAgreementLabel.textColor = grayColor;
+            _step1.image = image3;
+            _uploadImageLabel.textColor = grayColor;
+            _step2.image = image3;
+            _setPasswordLabel.textColor = grayColor;
+            _step3.image = image3;
+        }
+            break;
+        case 1:
+        {
+            _signAgreementLabel.textColor = redColor;
+            _step1.image = image2;
+            _uploadImageLabel.textColor = grayColor;
+            _step2.image = image3;
+            _setPasswordLabel.textColor = grayColor;
+            _step3.image = image3;
+        }
+            break;
+        case 2:
+        {
+            _signAgreementLabel.textColor = redColor;
+            _step1.image = image1;
+            _uploadImageLabel.textColor = redColor;
+            _step2.image = image2;
+            _setPasswordLabel.textColor = grayColor;
+            _step3.image = image3;
+            
+        }
+            break;
+        case 3:
+        {
+            _signAgreementLabel.textColor = redColor;
+            _step1.image = image1;
+            _uploadImageLabel.textColor = redColor;
+            _step2.image = image1;
+            _setPasswordLabel.textColor = redColor;
+            _step3.image = image2;
+        }
+            break;
+        default:
+        {
+            _signAgreementLabel.textColor = redColor;
+            _step1.image = image1;
+            _uploadImageLabel.textColor = redColor;
+            _step2.image = image1;
+            _setPasswordLabel.textColor = redColor;
+            _step3.image = image1;
+        }
+            break;
+    }
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.

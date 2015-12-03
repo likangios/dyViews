@@ -21,6 +21,21 @@
 		6118E26A1C0C26E7006C3265 /* 拍照@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118E2691C0C26E7006C3265 /* 拍照@2x.png */; };
 		6118E26C1C0C26ED006C3265 /* 相册@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118E26B1C0C26ED006C3265 /* 相册@2x.png */; };
 		6128A9C21C0D92C50044F5BF /* DefaultPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6128A9C11C0D92C50044F5BF /* DefaultPhotoView.m */; };
+		6134720F1C0FD1EA00A02027 /* UploadImageBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6134720E1C0FD1EA00A02027 /* UploadImageBaseVC.m */; };
+		613472131C0FD99000A02027 /* SetExchangePasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 613472111C0FD99000A02027 /* SetExchangePasswordVC.m */; };
+		613472141C0FD99000A02027 /* SetExchangePasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 613472121C0FD99000A02027 /* SetExchangePasswordVC.xib */; };
+		613472161C0FEA5500A02027 /* ExchangePasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 613472151C0FEA5500A02027 /* ExchangePasswordView.xib */; };
+		613472191C0FEA6600A02027 /* ExchangePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 613472181C0FEA6600A02027 /* ExchangePasswordView.m */; };
+		6134721B1C0FEB4B00A02027 /* 注意@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6134721A1C0FEB4B00A02027 /* 注意@2x.png */; };
+		613472211C100F3200A02027 /* Unity.m in Sources */ = {isa = PBXBuildFile; fileRef = 613472201C100F3200A02027 /* Unity.m */; };
+		613472241C101B8100A02027 /* SignAgreementView.m in Sources */ = {isa = PBXBuildFile; fileRef = 613472231C101B8100A02027 /* SignAgreementView.m */; };
+		613472261C101B9400A02027 /* SignAgreementView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 613472251C101B9400A02027 /* SignAgreementView.xib */; };
+		613472281C101DD200A02027 /* 选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 613472271C101DD200A02027 /* 选中@2x.png */; };
+		6134722A1C10236B00A02027 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = 613472291C10236B00A02027 /* next.png */; };
+		6134722D1C10273C00A02027 /* SelectVipUnitVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6134722C1C10273C00A02027 /* SelectVipUnitVCViewController.m */; };
+		613472301C10282800A02027 /* UIView+loadNib.m in Sources */ = {isa = PBXBuildFile; fileRef = 6134722F1C10282800A02027 /* UIView+loadNib.m */; };
+		613472341C10326E00A02027 /* VipUnitListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 613472321C10326E00A02027 /* VipUnitListVC.m */; };
+		613472351C10326E00A02027 /* VipUnitListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 613472331C10326E00A02027 /* VipUnitListVC.xib */; };
 		614B04291C0D9C5000E58087 /* ttttViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 614B04281C0D9C5000E58087 /* ttttViewController.xib */; };
 		614B042D1C0D9DA500E58087 /* UploadImageFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 614B042B1C0D9DA500E58087 /* UploadImageFirstVC.m */; };
 		614B04301C0D9DF400E58087 /* UploadImageFirstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 614B042F1C0D9DF400E58087 /* UploadImageFirstVC.xib */; };
@@ -47,8 +62,6 @@
 		61569BAB1C0E8A8D006CF103 /* SelectImageNoPreviewAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61569BAA1C0E8A8D006CF103 /* SelectImageNoPreviewAlertView.m */; };
 		61569BAE1C0E9212006CF103 /* CustomUIImagePickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 61569BAD1C0E9212006CF103 /* CustomUIImagePickerVC.m */; };
 		61569BB21C0EA181006CF103 /* UploadImageThirdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 61569BB01C0EA181006CF103 /* UploadImageThirdVC.m */; };
-		61569BB31C0EA181006CF103 /* UploadImageThirdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61569BB11C0EA181006CF103 /* UploadImageThirdVC.xib */; };
-		61569BB71C0EBE12006CF103 /* UploadImageSecondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61569BB61C0EBE12006CF103 /* UploadImageSecondVC.xib */; };
 		61569BB91C0EC0F5006CF103 /* testView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61569BB81C0EC0F5006CF103 /* testView.xib */; };
 		61569BBC1C0EC13B006CF103 /* testView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61569BBB1C0EC13B006CF103 /* testView.m */; };
 		61A68DDC1C0EE1BD00166B14 /* ttt2222ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A68DDA1C0EE1BD00166B14 /* ttt2222ViewController.m */; };
@@ -102,6 +115,29 @@
 		6118E26D1C0C30B4006C3265 /* dyViews.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dyViews.pch; sourceTree = "<group>"; };
 		6128A9C01C0D92C50044F5BF /* DefaultPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultPhotoView.h; sourceTree = "<group>"; };
 		6128A9C11C0D92C50044F5BF /* DefaultPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultPhotoView.m; sourceTree = "<group>"; };
+		6134720D1C0FD1EA00A02027 /* UploadImageBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImageBaseVC.h; sourceTree = "<group>"; };
+		6134720E1C0FD1EA00A02027 /* UploadImageBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadImageBaseVC.m; sourceTree = "<group>"; };
+		613472101C0FD99000A02027 /* SetExchangePasswordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetExchangePasswordVC.h; sourceTree = "<group>"; };
+		613472111C0FD99000A02027 /* SetExchangePasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetExchangePasswordVC.m; sourceTree = "<group>"; };
+		613472121C0FD99000A02027 /* SetExchangePasswordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetExchangePasswordVC.xib; sourceTree = "<group>"; };
+		613472151C0FEA5500A02027 /* ExchangePasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExchangePasswordView.xib; sourceTree = "<group>"; };
+		613472171C0FEA6600A02027 /* ExchangePasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExchangePasswordView.h; sourceTree = "<group>"; };
+		613472181C0FEA6600A02027 /* ExchangePasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExchangePasswordView.m; sourceTree = "<group>"; };
+		6134721A1C0FEB4B00A02027 /* 注意@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "注意@2x.png"; sourceTree = "<group>"; };
+		6134721F1C100F3200A02027 /* Unity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unity.h; sourceTree = "<group>"; };
+		613472201C100F3200A02027 /* Unity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Unity.m; sourceTree = "<group>"; };
+		613472221C101B8100A02027 /* SignAgreementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignAgreementView.h; sourceTree = "<group>"; };
+		613472231C101B8100A02027 /* SignAgreementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignAgreementView.m; sourceTree = "<group>"; };
+		613472251C101B9400A02027 /* SignAgreementView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignAgreementView.xib; sourceTree = "<group>"; };
+		613472271C101DD200A02027 /* 选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "选中@2x.png"; sourceTree = "<group>"; };
+		613472291C10236B00A02027 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
+		6134722B1C10273C00A02027 /* SelectVipUnitVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectVipUnitVCViewController.h; sourceTree = "<group>"; };
+		6134722C1C10273C00A02027 /* SelectVipUnitVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectVipUnitVCViewController.m; sourceTree = "<group>"; };
+		6134722E1C10282800A02027 /* UIView+loadNib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+loadNib.h"; sourceTree = "<group>"; };
+		6134722F1C10282800A02027 /* UIView+loadNib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+loadNib.m"; sourceTree = "<group>"; };
+		613472311C10326E00A02027 /* VipUnitListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VipUnitListVC.h; sourceTree = "<group>"; };
+		613472321C10326E00A02027 /* VipUnitListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VipUnitListVC.m; sourceTree = "<group>"; };
+		613472331C10326E00A02027 /* VipUnitListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VipUnitListVC.xib; sourceTree = "<group>"; };
 		614B04281C0D9C5000E58087 /* ttttViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ttttViewController.xib; sourceTree = "<group>"; };
 		614B042A1C0D9DA500E58087 /* UploadImageFirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImageFirstVC.h; sourceTree = "<group>"; };
 		614B042B1C0D9DA500E58087 /* UploadImageFirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadImageFirstVC.m; sourceTree = "<group>"; };
@@ -145,8 +181,6 @@
 		61569BAD1C0E9212006CF103 /* CustomUIImagePickerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUIImagePickerVC.m; sourceTree = "<group>"; };
 		61569BAF1C0EA181006CF103 /* UploadImageThirdVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImageThirdVC.h; sourceTree = "<group>"; };
 		61569BB01C0EA181006CF103 /* UploadImageThirdVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadImageThirdVC.m; sourceTree = "<group>"; };
-		61569BB11C0EA181006CF103 /* UploadImageThirdVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UploadImageThirdVC.xib; sourceTree = "<group>"; };
-		61569BB61C0EBE12006CF103 /* UploadImageSecondVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UploadImageSecondVC.xib; sourceTree = "<group>"; };
 		61569BB81C0EC0F5006CF103 /* testView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testView.xib; sourceTree = "<group>"; };
 		61569BBA1C0EC13B006CF103 /* testView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testView.h; sourceTree = "<group>"; };
 		61569BBB1C0EC13B006CF103 /* testView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testView.m; sourceTree = "<group>"; };
@@ -205,6 +239,12 @@
 		6118E25C1C0BFD16006C3265 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				613472171C0FEA6600A02027 /* ExchangePasswordView.h */,
+				613472181C0FEA6600A02027 /* ExchangePasswordView.m */,
+				613472151C0FEA5500A02027 /* ExchangePasswordView.xib */,
+				613472221C101B8100A02027 /* SignAgreementView.h */,
+				613472231C101B8100A02027 /* SignAgreementView.m */,
+				613472251C101B9400A02027 /* SignAgreementView.xib */,
 				6118E2591C0BFABB006C3265 /* AccountProgressView.h */,
 				6118E25A1C0BFABB006C3265 /* AccountProgressView.m */,
 				61A68DDE1C0EE25000166B14 /* AccountProgressView.xib */,
@@ -256,6 +296,10 @@
 				6153DEFF1C06B81B00BDFEFE /* AppDelegate.m */,
 				6153DF011C06B81B00BDFEFE /* ViewController.h */,
 				6153DF021C06B81B00BDFEFE /* ViewController.m */,
+				6134722E1C10282800A02027 /* UIView+loadNib.h */,
+				6134722F1C10282800A02027 /* UIView+loadNib.m */,
+				6134721F1C100F3200A02027 /* Unity.h */,
+				613472201C100F3200A02027 /* Unity.m */,
 				6118E2531C0BF9BF006C3265 /* 进度条细s1@2x.png */,
 				6118E2541C0BF9BF006C3265 /* 进度条细s2@2x.png */,
 				6118E2551C0BF9BF006C3265 /* 进度条细s3@2x.png */,
@@ -267,6 +311,9 @@
 				6118E24B1C0BE602006C3265 /* gou_@2x.png */,
 				6118E2691C0C26E7006C3265 /* 拍照@2x.png */,
 				6118E26B1C0C26ED006C3265 /* 相册@2x.png */,
+				6134721A1C0FEB4B00A02027 /* 注意@2x.png */,
+				613472271C101DD200A02027 /* 选中@2x.png */,
+				613472291C10236B00A02027 /* next.png */,
 				6154FA721C07F834000FBF2E /* AccountNoticeVC.h */,
 				6154FA731C07F834000FBF2E /* AccountNoticeVC.m */,
 				6154FA751C07F851000FBF2E /* AccountNoticeVC.xib */,
@@ -276,15 +323,23 @@
 				6118E2451C0BE424006C3265 /* SignAgreementVC.h */,
 				6118E2461C0BE424006C3265 /* SignAgreementVC.m */,
 				6118E2471C0BE424006C3265 /* SignAgreementVC.xib */,
+				6134722B1C10273C00A02027 /* SelectVipUnitVCViewController.h */,
+				6134722C1C10273C00A02027 /* SelectVipUnitVCViewController.m */,
+				613472311C10326E00A02027 /* VipUnitListVC.h */,
+				613472321C10326E00A02027 /* VipUnitListVC.m */,
+				613472331C10326E00A02027 /* VipUnitListVC.xib */,
+				6134720D1C0FD1EA00A02027 /* UploadImageBaseVC.h */,
+				6134720E1C0FD1EA00A02027 /* UploadImageBaseVC.m */,
 				614B042A1C0D9DA500E58087 /* UploadImageFirstVC.h */,
 				614B042B1C0D9DA500E58087 /* UploadImageFirstVC.m */,
 				614B042F1C0D9DF400E58087 /* UploadImageFirstVC.xib */,
 				6118E2641C0C22B3006C3265 /* UploadImageSecondVC.h */,
 				6118E2651C0C22B3006C3265 /* UploadImageSecondVC.m */,
-				61569BB61C0EBE12006CF103 /* UploadImageSecondVC.xib */,
 				61569BAF1C0EA181006CF103 /* UploadImageThirdVC.h */,
 				61569BB01C0EA181006CF103 /* UploadImageThirdVC.m */,
-				61569BB11C0EA181006CF103 /* UploadImageThirdVC.xib */,
+				613472101C0FD99000A02027 /* SetExchangePasswordVC.h */,
+				613472111C0FD99000A02027 /* SetExchangePasswordVC.m */,
+				613472121C0FD99000A02027 /* SetExchangePasswordVC.xib */,
 				6155360B1C0D42B6009209DD /* TestViewController.h */,
 				6155360C1C0D42B6009209DD /* TestViewController.m */,
 				6155360E1C0D4B06009209DD /* ttttViewController.h */,
@@ -464,15 +519,18 @@
 				6118E26C1C0C26ED006C3265 /* 相册@2x.png in Resources */,
 				6118E2581C0BF9BF006C3265 /* 进度条细s3@2x.png in Resources */,
 				6154FA701C07F1B3000FBF2E /* 2.png in Resources */,
-				61569BB31C0EA181006CF103 /* UploadImageThirdVC.xib in Resources */,
 				6153DF0B1C06B81B00BDFEFE /* LaunchScreen.storyboard in Resources */,
+				613472161C0FEA5500A02027 /* ExchangePasswordView.xib in Resources */,
+				613472261C101B9400A02027 /* SignAgreementView.xib in Resources */,
 				6154FA7A1C080534000FBF2E /* card_@2x.png in Resources */,
 				61E64BA11C06E4CE00641252 /* ok(tanchuan)_@2x.png in Resources */,
 				61A68DDD1C0EE1BD00166B14 /* ttt2222ViewController.xib in Resources */,
 				6118E2601C0C1F94006C3265 /* child.xib in Resources */,
+				6134721B1C0FEB4B00A02027 /* 注意@2x.png in Resources */,
 				6153DF081C06B81B00BDFEFE /* Assets.xcassets in Resources */,
 				6118E2561C0BF9BF006C3265 /* 进度条细s1@2x.png in Resources */,
 				614B04301C0D9DF400E58087 /* UploadImageFirstVC.xib in Resources */,
+				6134722A1C10236B00A02027 /* next.png in Resources */,
 				6118E26A1C0C26E7006C3265 /* 拍照@2x.png in Resources */,
 				6118E24C1C0BE602006C3265 /* checkbox_normal_@2x.png in Resources */,
 				6153DF061C06B81B00BDFEFE /* Main.storyboard in Resources */,
@@ -482,11 +540,13 @@
 				61A68DDF1C0EE25000166B14 /* AccountProgressView.xib in Resources */,
 				614B04291C0D9C5000E58087 /* ttttViewController.xib in Resources */,
 				6154FA7E1C080969000FBF2E /* AccountFinishVC.xib in Resources */,
+				613472351C10326E00A02027 /* VipUnitListVC.xib in Resources */,
 				61569BB91C0EC0F5006CF103 /* testView.xib in Resources */,
 				6154FA761C07F851000FBF2E /* AccountNoticeVC.xib in Resources */,
 				6118E24D1C0BE602006C3265 /* gou_@2x.png in Resources */,
-				61569BB71C0EBE12006CF103 /* UploadImageSecondVC.xib in Resources */,
+				613472141C0FD99000A02027 /* SetExchangePasswordVC.xib in Resources */,
 				6154FA7C1C08053A000FBF2E /* WIFI_@2x.png in Resources */,
+				613472281C101DD200A02027 /* 选中@2x.png in Resources */,
 				6118E2491C0BE424006C3265 /* SignAgreementVC.xib in Resources */,
 				6154FA781C08052B000FBF2E /* ID_@2x.png in Resources */,
 				6118E2571C0BF9BF006C3265 /* 进度条细s2@2x.png in Resources */,
@@ -552,19 +612,27 @@
 				61569BAE1C0E9212006CF103 /* CustomUIImagePickerVC.m in Sources */,
 				61569BBC1C0EC13B006CF103 /* testView.m in Sources */,
 				615536111C0D4B06009209DD /* ttttViewController.m in Sources */,
+				6134722D1C10273C00A02027 /* SelectVipUnitVCViewController.m in Sources */,
+				613472131C0FD99000A02027 /* SetExchangePasswordVC.m in Sources */,
 				61A68DDC1C0EE1BD00166B14 /* ttt2222ViewController.m in Sources */,
+				613472211C100F3200A02027 /* Unity.m in Sources */,
 				61E64C051C0701FF00641252 /* Preview.m in Sources */,
 				6154FA741C07F834000FBF2E /* AccountNoticeVC.m in Sources */,
 				61569BAB1C0E8A8D006CF103 /* SelectImageNoPreviewAlertView.m in Sources */,
+				613472191C0FEA6600A02027 /* ExchangePasswordView.m in Sources */,
+				613472301C10282800A02027 /* UIView+loadNib.m in Sources */,
+				613472341C10326E00A02027 /* VipUnitListVC.m in Sources */,
 				61E64B9F1C06DCFA00641252 /* ImageUploadSuccessAlertView.m in Sources */,
 				614B04331C0DA5E400E58087 /* ImagesRequireView.m in Sources */,
 				6128A9C21C0D92C50044F5BF /* DefaultPhotoView.m in Sources */,
 				6118E2481C0BE424006C3265 /* SignAgreementVC.m in Sources */,
+				6134720F1C0FD1EA00A02027 /* UploadImageBaseVC.m in Sources */,
 				61569BB21C0EA181006CF103 /* UploadImageThirdVC.m in Sources */,
 				614B042D1C0D9DA500E58087 /* UploadImageFirstVC.m in Sources */,
 				6118E2631C0C1FE6006C3265 /* child.m in Sources */,
 				6154FA811C08098A000FBF2E /* AccountFinishVC.m in Sources */,
 				6153DF031C06B81B00BDFEFE /* ViewController.m in Sources */,
+				613472241C101B8100A02027 /* SignAgreementView.m in Sources */,
 				6153DF001C06B81B00BDFEFE /* AppDelegate.m in Sources */,
 				6153DEFD1C06B81B00BDFEFE /* main.m in Sources */,
 				6118E2671C0C22B3006C3265 /* UploadImageSecondVC.m in Sources */,

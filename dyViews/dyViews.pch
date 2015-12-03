@@ -8,13 +8,27 @@
 
 #ifndef dyViews_pch
 #define dyViews_pch
-#import <Masonry/Masonry.h>
 
+// lib
+#import <Masonry/Masonry.h>
+#import <IHKeyboardAvoiding.h>
+
+#import "Unity.h"
 
 #define ImagesRequire @"·完整拍摄身份证原件照片\n·照片上的文字清晰可辨\n·照片无遮挡、无光斑"
 
 
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf=self
+
 #define ScreenWidth  [UIScreen mainScreen].bounds.size.width
+
+#define color_yellow [UIColor colorWithRed:253/255.0 green:222/255.0 blue:98/255.0 alpha:1.0]
+
+#define color_yellow2 [UIColor colorWithRed:253/255.0 green:242/255.0 blue:187/255.0 alpha:1.0]
+
+
+
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 

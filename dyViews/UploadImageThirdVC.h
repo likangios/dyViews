@@ -6,8 +6,8 @@
 //  Copyright © 2015年 lk. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "UploadImageBaseVC.h"
 
-@interface UploadImageThirdVC : ViewController
+@interface UploadImageThirdVC : UploadImageBaseVC
 
 @end
