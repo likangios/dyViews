@@ -21,6 +21,10 @@
  */
 @property (nonatomic,strong) UIImage *needUploadImage;
 /**
+ *  要上传的图片URL
+ */
+@property (nonatomic,copy) NSString *needUploadImageURL;
+/**
  *  拍照 图片
  */
 @property(nonatomic,strong) UIImagePickerController *imagePicker;

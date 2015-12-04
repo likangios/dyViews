@@ -24,7 +24,9 @@
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:[[AccountNoticeVC alloc]initWithNibName:@"AccountNoticeVC" bundle:nil]];
     
     nav.navigationBar.barTintColor = [UIColor purpleColor];
-        
+    
+    [Unity clearTempCache];
+    
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     

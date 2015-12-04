@@ -207,7 +207,17 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
     UIImage *image = (UIImage *)[info objectForKey:UIImagePickerControllerEditedImage];
     _needUploadImage = image;
+    NSURL *url = [Unity createTempImageUploadFile:image];
+    
+    self.needUploadImageURL = url.path;
+    
+    NSLog(@"url ---------- %@",url.description);
+    
+    NSLog(@"文件大小-- %f",[Unity fileSizeAtPath:url.path]);
+    
+    NSLog(@"Temp大小-- %f",[Unity folderSizeAtPath:[NSTemporaryDirectory() description]]);
     [self updateConstraint];
+    
     [self dismissViewControllerAnimated:YES completion:NULL];
     
     
