@@ -10,5 +10,8 @@
 
 @interface UIView (loadNib)
 
+@property (nonatomic,strong) NSString *tagString;
+
 +(id)loadSelfWithNibOwner:(UIViewController *)owner;
+- (UIView *)viewWithTagString:(NSString *)value;
 @end

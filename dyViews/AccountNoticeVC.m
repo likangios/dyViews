@@ -38,12 +38,9 @@
 - (IBAction)detailsClick:(id)sender {
     NSLog(@"详情");
 }
-
 - (void)viewDidLoad{
     [super viewDidLoad];
-    
     self.title = @"开户须知";
-    
 }
 - (void)setLayoutView{
     
